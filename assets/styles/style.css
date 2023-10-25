@@ -19,12 +19,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.container{
-    position: relative;
-    background-color: var(--main-color);
-    z-index: 1;
-}
-
 /* heading text style */
 h1, h2, h3,h4{
     text-transform: capitalize;
@@ -96,23 +90,23 @@ header .icon{
     text-align: center;
 }
 
-.content main{
+.content .home{
     padding-top: 17vh;
 }
 
     /* slider style start */
-.content main .slider{
+.content .home .slider{
     background-color: var(--side-color-2);
     height: 60vh;
     margin: 2rem 0;
     position: relative;
     overflow: hidden;
 }
-.content main .slider .lampung-image{
+.content .home .slider .lampung-image{
     height: 100%;
 }
 
-.content main .slider h4{
+.content .home .slider h4{
     position: absolute;
     bottom: 1.6rem;
     left: 50%;
@@ -124,7 +118,7 @@ header .icon{
 
     /* slider style end */
 
-.content main h3{
+.content .home h3{
     width: fit-content;
     border-bottom: .2rem solid var(--side-color-1);
     margin: auto;

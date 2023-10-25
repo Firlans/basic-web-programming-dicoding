@@ -4,9 +4,9 @@ const lampungIntro = [
     ["budaya-lampung.jpg", "Budaya yang kaya dan adat istiadat"],
     ["festival-lampung.webp", "Festival-festival yang meriah dan tradisi-tradisi unik"]
 ]
-const main = document.querySelector(".content main");
+const main = document.querySelector(".content .home");
 const caption = document.getElementsByTagName("h3")[0];
-const row = document.createElement("div");
+const row = document.createElement("figure");
 let index = 0;
 
 
@@ -14,7 +14,7 @@ let index = 0;
 // home section slider
 function setIntro(index){
     const element = `<img src="./assets/images/${lampungIntro[index][0]}" alt="background lampung" class="lampung-image">
-    <h4>${lampungIntro[index][1]}</h4>`
+    <figcaption><h4>${lampungIntro[index][1]}</h4></figcaption>`
     row.innerHTML = element;
     main.insertBefore(row, caption);
 }
